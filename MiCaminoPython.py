@@ -7,3 +7,5 @@ edad = 24
 peso = 102.56
 ## Forma De Declarar Un Booleano
 esta_aprendiendo = True
+## Se Concatena con una '+' y para poner otra variable se coloca ','
+print("hi my name is " + nombre + ", what is your name?",edad)
