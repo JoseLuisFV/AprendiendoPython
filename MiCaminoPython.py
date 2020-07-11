@@ -1,0 +1,7 @@
+print("Empezando El Lenguaje De Mi Camino")
+print("==================================")
+print("Este Lenguaje Se Puede Usar en Robotica")
+print("==================================")
+print("Intelegencia Artificial")
+print("==================================")
+print("Ciencia De Datos")
