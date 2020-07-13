@@ -1,11 +1,21 @@
-## Con el input se le puede ingrese
-nombre = input("Cual es tu nombre? ")
-## la funcion int convierte la cadena en un entero
-edad = int(input("Cual es tu edad? "))
-ciudad = input("Donde vives? ")
-email = input("Ingrese un correo electronico que use")
 
-# Existe una manera convertir todoen cadena y es con f
-# al inicicio seguido de ""
-print(f"Hola {nombre} un gusto conocerte sabias que tu {edad}"
-      f" Si le sumas 1 siempre cambia al tipo que es? ")
+password = input("Write your new password: ")
+print("welcome again on OnFireNews")
+password_auth = input("Write your password: ")
+# Manera en como se declara la declaracion "if"
+if password == password_auth:
+      print("Congrats you are learning")
+else:
+      print("error password didnt match")
+
+number = input("Choose a number between 1 to 3: ")
+
+# Declaracion de un if con mas de dos posibilidades
+if number == 1:
+      print("No hubo suerte ")
+elif number == 2:
+      print("ganaste")
+elif number == 3:
+      print("No Pienses muy Grande")
+else:
+      print("You dont know read or what")
