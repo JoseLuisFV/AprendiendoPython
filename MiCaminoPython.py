@@ -9,19 +9,13 @@ print("Bienvenido a tu muerte, pero si adivinas se te da otra vida")
 while intento <= 3:
       numero_adivinado = int(input("Elige cualquier numero y prueba "
                                     "tu suerte: "))
-      if numero_a_adivinar == numero_adivinado:
-            if intento < 3:
-                  print("Felicidades Ganaste, al parecer tienes talento")
-                  intento = 3
-            else:
-                  print("Eres un ***dito suertudo, Ganaste "
-                        "en ultimo intento")
-      else:
-            if intento < 3:
-                  print("Mala suerte intentalo de nuevo")
-            else:
-                  print("Se te acabaron las oportunidades, no hay vuelta "
-                        "atras a tu destino")
       intento += 1
+      if numero_a_adivinar == numero_adivinado:
+            print("Wow!, Mirate, Genio!")
+            break
+      else:
+            print("No!, Ni en un millon de años!, intetalo de nuevo")
+else:
+      print("Se te acabaron las oportunidades")
 
 
