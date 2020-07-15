@@ -1,34 +1,33 @@
-# Este programa abarca listas
-# forma de declarar listas
-videogames_characters = ["Mario", "Sonic", "Master Chief", "Marcus Fenix",
-                         "Cratos", "Cayde-6", "San-14", "Joker Persona 5"]
-#Con la funcion len obtenemos la cantidad de personajes que tiene la lista
-print(len(videogames_characters))
-#Se Elige el primer personaje de la lista
+# Se pueden ingresar nuevas variables a la lista hay varais formas
+# Si queremos agregar una nueva solamente utilizamos append
+numbers = [99, 123, 2313, 1, 1231411, 343, 435345]
+numbers.append(111)
+print(numbers)
+# Podemos usar insert para especificar donde lo colocamos, y eso hace que se
+# desplacen las otras variables a otras posiciones
+numbers.insert(2, 999)
+print(numbers)
 
-character = videogames_characters[0]
-print(character)
+# Para Eliminar una varaible de la lista podemos usar remove, si hay mas de una
+# variable que tenga el mismo valor entonces solo se borra la primera que
+# tenga dicho valor
+numbers.remove(1)
+print(numbers)
 
-#Se Elige el ultimo personaje de la lista
-character = videogames_characters[-1]
-print(character)
-#Se Elige el ultimo personaje de la lista
-character = videogames_characters[-2]
-print(character)
-#En python tenemos una manera interesante de obtener un conjunto de variables
-#existentes en la lista y eso es utilizando limites de donde las queremos agarrar
-#pero el simbolo que nos ayuda a esto es el ":", el cual del lado izquierdo
-#el limite inferior a la izquierda y el limite superior a la derecha
+# Si queremos acomodar nuestra lista podemos usar sort, este acomodo sera de
+# manera ascendent
+numbers.sort()
+print(numbers)
 
-#el siguiente codigo imprimer el conjuntos de variables que se encuentran a partir
-# de lo posicion 3, eso incluye lo que hay en esta misma posicion
-print(videogames_characters[4:])
-#el siguiente es parecido perso toma las que se encuentran abajo de esta posicion
-# pero en este caso no se incluye la que se encuentra en esata misma
-print(videogames_characters[:4])
-#Por ultimo le podemos dar ambos limites
-print(videogames_characters[2:6])
+# Podemos darle la vuelta a las posiciones que la ultima sea la primera,
+# la penultima sera la segunda y asi sucesivamente
+numbers.reverse()
+print(numbers)
 
-#podemos modificar una de las variables por otra
-videogames_characters[6] = "Link"
-print(videogames_characters)
+# Con el metodo pop que quita la variable de la ultima posiscion
+numbers.pop()
+print(numbers)
+
+# Podemos limpiar la lista con clear
+numbers.clear()
+print(numbers)
