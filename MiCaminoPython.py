@@ -1,31 +1,30 @@
-#Ejercicio Uno De platzi
+# Ejercicio 2 Platzi
+def palindromo(palabra):
+    #La funcion replace que viene ya definida en python y remplaza
+    #los caracteres iguales al primer parametro por caracteres iguales
+    #a los del segundo argumento
+    palabra = palabra.replace(' ', '')
+    #Funcion que pone en minuscula todas las letras
+    palabra = palabra.lower()
+    #Ingresa lo que hay en la variable palabra pero la ingresara
+    #haciendo que la ultima letra de esta variable, sea la primera
+    #para la nueva variable
+    palabra_invertida = palabra[::-1]
+    if palabra == palabra_invertida:
+        return True
+    else:
+        return False
 
-#Manera de declarar una funcion en Python
-def conversor(tipo_pesos, valor_dolar):
-    pesos = input("¿Cuantos pesos" + tipo_pesos + "tienes?: ")
-    pesos = float(pesos)
-    dolares = pesos / valor_dolar
-    dolares = round(dolares, 2)
-    dolares = str(dolares)
-    print("Tienes $" + dolares + " dolares")
 
-menu = """
-Bienvenido al conversor de monedas 
+def main():
+    palabra = input('Escribe una palabra: ')
+    es_palindromo = palindromo(palabra)
+    if es_palindromo == True:
+        print('Es Palindromo')
 
-1 - Pesos Colombianos
-2 - Pesos Argentinos
-3 - Pesos Mexicanos
+    else:
+        print('No Es Palindromo')
 
-Elige una opcion: """
 
-option = int(input(menu))
-
-if option == 1:
-    conversor("Colombianos", 3875)
-elif option == 2:
-    conversor("Argentinos", 65)
-elif option == 3:
-    conversor("Mexicanos", 24)
-
-else:
-    print("Elige una Opcion Correcta porfavor")
+if __name__ == '__main__':
+    main()
