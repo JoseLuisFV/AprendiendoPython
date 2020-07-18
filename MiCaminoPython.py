@@ -1,25 +1,30 @@
 #Ejercicio Platzi 2
-def es_primo(numero):
-    contador = 0
+import random
+def generated_password():
+    mayusculas = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+    minusculas = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+    simbolos = ['!', '#', '$', '&', '/', '(', ')']
+    numeros = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
 
-    for num in range(1, numero + 1):
-        print('numero')
-        if numero == 2:
-            return True
-        if num == 1 or num == numero:
-            continue
-        if numero % num == 0:
-            return False
-    return True
+    caracteres = mayusculas + minusculas + simbolos + numeros
+    password = []
 
+    for i in range(15):
+        caracter_random = random.choice(caracteres)
+        password.append(caracter_random)
+
+    password = "".join(password)
+
+    print(password)
 
 
 def main():
-    numero = int(input('Escribe un numero: '))
-    if es_primo(numero):
-        print('El Numero es primo')
-    else:
-        print('No es primo')
+    generated_password()
+
+    matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    for vector in matrix:
+        for num in vector:
+            print(num)
 
 
 if __name__ == '__main__':
