@@ -98,7 +98,7 @@ for numero_n in range((number + 1), (number + 6)):
     cubo = math.pow(numero_n, 3)
     tabla += "\n|  " + str(numero_n) + '  |' + '  ' + str(cuadrado) + '  ' + '|  ' + str(cubo) + '  |'
 print(tabla)
-
+# Ejercicio 10
 # Escribe un programa que muestre los n primeros términos de la serie de
 # Fibonacci. El primer término de la serie de Fibonacci es 0, el segundo es 1
 # y el resto se calcula sumando los dos anteriores, por lo que tendríamos que
