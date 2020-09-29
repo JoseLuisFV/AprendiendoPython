@@ -42,3 +42,6 @@ class Villano:
               f'\nAtaque: {self.atack}'
               f'\nDefensa: {self.defense}'
               f'\nVelocidad: {self.speed}')
+
+    def function_void(self):
+        pass
