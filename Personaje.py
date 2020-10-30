@@ -4,6 +4,11 @@ class Personaje:
         self._name = name
         self._job = job
 
+    # Podemos aplicar polimorfismo, para que una funcion que es heredada a otras clases
+    # puedan tener el mismo nombre pero podemos hacer que en cada clase tenga un comportamiento
+    # distinto, en este caso existe una funcion llamada presentacion pero
+    # que por default le damos algo mas generico, pero en las clases
+    # hijas Heroe y villano esta la cambiamos a algo mas acorde
     def presentacion(self):
         print(f'Hola me llamo {self._name} y soy{self._job}')
 

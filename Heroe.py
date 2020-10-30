@@ -29,6 +29,7 @@ class Heroe(Personaje):
         self.__generar_stats()
 
     # Los metodos tambien tienen su tipo de acceso ya sea publico, protected o privado
+    # Ha presentacion de le aplico polimorfismo.
     def presentacion(self):
         print(f'Hola soy {self.name} y estoy en mi aventura como {self.job}'
               '\nAndo en busca de companeros para vencer al mal de este mundo')
